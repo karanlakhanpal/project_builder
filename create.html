@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Profile | Enter the Details</title>
+
+    <link rel="stylesheet" href="./assets/css/create.css">
+</head>
+<body>
+    <section>
+        <h1>Fill Your Details</h1>
+        <div>
+            <h2>Username</h2>
+            <input type="text" id="user" placeholder="Your Input">
+        </div>
+        <div>
+            <h2>Full Name</h2>
+            <input type="text" id="name" placeholder="Your Input">
+        </div>
+        <div>
+            <h2>Email ID</h2>
+            <input type="text" id="mail" placeholder="Your Input">
+        </div>
+        <div>
+            <h2>Bio</h2>
+            <textarea id="bio" cols="30" rows="10" placeholder="Your Input"></textarea>
+        </div>
+        <button onclick="send()">SUBMIT</button>
+    </section>
+
+    <!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+	<script>
+	  const firebaseConfig = {
+        apiKey: "AIzaSyBy5lIZ9vvrlqIInN3sTxpb7few2VO8DCQ",
+        authDomain: "elemental-kite-341611.firebaseapp.com",
+        databaseURL: "https://elemental-kite-341611-default-rtdb.firebaseio.com",
+        projectId: "elemental-kite-341611",
+        storageBucket: "elemental-kite-341611.appspot.com",
+        messagingSenderId: "427106993538",
+        appId: "1:427106993538:web:313acf74fb69f9d8163b9b",
+        measurementId: "G-670MXFF81W"
+      };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	  firebase.analytics();
+	</script>
+    <script src="./assets/js/create.js"></script>
+</body>
+</html>
