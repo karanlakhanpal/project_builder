@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build Your Profile | Enter the Details</title>
 
-    <link rel="stylesheet" href="./assets/css/create.css">
+    <link rel="stylesheet" href="../css/create.css">
 </head>
 <body>
     <section>
@@ -27,7 +27,7 @@
             <h2>Bio</h2>
             <textarea id="bio" cols="30" rows="10" placeholder="Your Input"></textarea>
         </div>
-        <button onclick="send()">SUBMIT</button>
+        <button onclick="send()">SUBMIT</button> 
     </section>
 
     <!-- Firebase -->
@@ -36,20 +36,20 @@
 	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
 	<script>
-	  const firebaseConfig = {
-        apiKey: "AIzaSyBy5lIZ9vvrlqIInN3sTxpb7few2VO8DCQ",
-        authDomain: "elemental-kite-341611.firebaseapp.com",
-        databaseURL: "https://elemental-kite-341611-default-rtdb.firebaseio.com",
-        projectId: "elemental-kite-341611",
-        storageBucket: "elemental-kite-341611.appspot.com",
-        messagingSenderId: "427106993538",
-        appId: "1:427106993538:web:313acf74fb69f9d8163b9b",
-        measurementId: "G-670MXFF81W"
-      };
-	  // Initialize Firebase
-	  firebase.initializeApp(firebaseConfig);
-	  firebase.analytics();
+		const firebaseConfig = {
+            apiKey: "AIzaSyCV9iZCaf-7dwPXOi8k5ITiOQA_cjCDY_o",
+            authDomain: "myproject-41cee.firebaseapp.com",
+            databaseURL: "https://myproject-41cee-default-rtdb.firebaseio.com",
+            projectId: "myproject-41cee",
+            storageBucket: "myproject-41cee.appspot.com",
+            messagingSenderId: "357836257153",
+            appId: "1:357836257153:web:cdf4eed38abc546cef9a80"
+        };
+
+        // Initialize firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
 	</script>
-    <script src="./assets/js/create.js"></script>
+    <script src="../js/create.js"></script>
 </body>
 </html>

@@ -10,5 +10,12 @@ function send() {
         name: name1.value,
         mail: mail.value,
         bio: bio.value,
+    }).then(() => {
+        location.href = "./profile.html" + "?user=" + user.value;
     });
+
+    user.value = '';
+    name1.value = '';
+    mail.value = '';
+    bio.value = '';
 }
